@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="OnScreenRuler.LineTextInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OnScreenRuler"
+             FontFamily="Consolas"
+             FontSize="13"
+             FontStretch="Normal"
+             FontStyle="Normal"
+             FontWeight="Normal"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Orientation="Vertical">
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock>P0:</TextBlock>
+            <TextBlock x:Name="p0_tb" TextAlignment="Right"/>
+            <TextBlock Margin="5,0,0,0">P1:</TextBlock>
+            <TextBlock Margin="5,0,0,0" x:Name="p1_tb" TextAlignment="Right"/>
+
+            <TextBlock x:Name="deg_tb" Margin="10,0,0,0"/>
+            <TextBlock>°</TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock>Distance:</TextBlock>
+            <TextBlock Margin="5,0,0,0" x:Name="totalDist_tb"/>
+            <TextBlock> Pixel (</TextBlock>
+            <TextBlock x:Name="xDist_tb"/>
+            <TextBlock> x </TextBlock>
+            <TextBlock x:Name="yDist_tb" Margin="3,0,0,0" TextAlignment="Left"/>
+            <TextBlock>)</TextBlock>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
